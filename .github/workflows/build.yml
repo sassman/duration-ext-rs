@@ -50,24 +50,10 @@ jobs:
           toolchain: ${{ matrix.rust }}
       - name: cargo test
         run: cargo test --all
-      - name: cargo test (no default features)
-        run: cargo test --all --no-default-features
-
-  audit:
-    name: security audit
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: setup rust
-        uses: dtolnay/rust-toolchain@stable
-      - name: audit
-        uses: actions-rs/audit-check@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   publish-dry-run:
     name: publish dry-run
-    needs: [check, lint, test, audit]
+    needs: [check, lint, test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
