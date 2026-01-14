@@ -5,7 +5,7 @@ description = "Ergonomic extension trait for creating std::time::Duration from n
 authors = ["Sven Kanoldt <sven@d34dl0ck.me>"]
 edition = "2021"
 license = "GPL-3.0-only"
-repository = "https://github.com/sassman/t-rec-rs"
+repository = "https://github.com/sassman/duration-ext-rs"
 keywords = ["duration", "time", "extension", "ergonomic"]
 categories = ["date-and-time", "rust-patterns"]
 
