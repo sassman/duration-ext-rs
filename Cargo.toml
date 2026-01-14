@@ -1,0 +1,13 @@
+[package]
+name = "duration-ext"
+version = "1.0.0"
+description = "Ergonomic extension trait for creating std::time::Duration from numeric literals"
+authors = ["Sven Kanoldt <sven@d34dl0ck.me>"]
+edition = "2021"
+license = "GPL-3.0-only"
+repository = "https://github.com/sassman/t-rec-rs"
+keywords = ["duration", "time", "extension", "ergonomic"]
+categories = ["date-and-time", "rust-patterns"]
+
+[dependencies]
+# No dependencies - this is a zero-dependency crate
