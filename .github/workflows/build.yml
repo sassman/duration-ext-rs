@@ -49,9 +49,9 @@ jobs:
         with:
           toolchain: ${{ matrix.rust }}
       - name: cargo test
-        run: cargo test --all --locked
+        run: cargo test --all
       - name: cargo test (no default features)
-        run: cargo test --all --locked --no-default-features
+        run: cargo test --all --no-default-features
 
   audit:
     name: security audit
